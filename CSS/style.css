@@ -1,4 +1,54 @@
-.container {
+body {
+font-family: 'Skranji', cursive;
+background-color: black;
+color: rgb(17, 146, 133);
+height: 100vh;
+}
+h1 {
+    text-align: center;
+    font-size: 10rem;
+}
+h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+.container-up {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 45%;
+}
+
+.container-up__left {
+width: 30%;
+border: solid 2px rgb(17, 146, 133);
+text-align: center;
+margin-right: 1%;
+line-height: 1.4;
+}
+
+.container-up__right {
+    width: 68%;
+    border:solid 2px rgb(17, 146, 133);
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.container-up__right img {
+    height: 100%;
+}
+
+#image2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#image3 {
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
