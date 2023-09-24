@@ -30,6 +30,7 @@ border: solid 2px rgb(17, 146, 133);
 text-align: center;
 margin-right: 1%;
 line-height: 1.4;
+background-color: rgb(31, 28, 28);
 }
 
 .container-up__left>img{
@@ -44,6 +45,7 @@ line-height: 1.4;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 5px;
     justify-items: center;
+    background-color: rgb(31, 28, 28);
 }
 
 .container-up__right img {
@@ -71,6 +73,7 @@ line-height: 1.4;
     margin: 1%;
     padding: 1%;
     line-height: 2em;
+    background-color: rgb(31, 28, 28);
 }
 
 .container-down__right {
@@ -80,7 +83,7 @@ line-height: 1.4;
     margin: 1%;
     text-align: center;
     line-height: 3em;
-
+    background-color: rgb(31, 28, 28);
 }
 
 .container-down__right>ul {
