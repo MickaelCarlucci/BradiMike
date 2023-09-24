@@ -2,6 +2,7 @@ body {
 font-family: 'Skranji', cursive;
 background-color: black;
 color: rgb(17, 146, 133);
+font-size: 100%;
 height: 100vh;
 }
 h1 {
@@ -13,24 +14,30 @@ h2 {
     text-decoration: underline;
     font-size: 2rem;
     padding-bottom: 2%;
+    transition: 100ms 400ms;
 }
 .container-up {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 45%;
+    height: 60%;
 }
 
 .container-up__left {
 width: 30%;
+padding: 1%;
 border: solid 2px rgb(17, 146, 133);
 text-align: center;
 margin-right: 1%;
 line-height: 1.4;
 }
 
+.container-up__left>img{
+    width: 40%;
+}
+
 .container-up__right {
-    width: 68%;
+    width: 65%;
     border:solid 2px rgb(17, 146, 133);
     display: grid;
     grid-template-rows: 30% 30% 30%;
@@ -41,6 +48,7 @@ line-height: 1.4;
 
 .container-up__right img {
     height: 100%;
+    padding: 5%;
 }
 
 #image2 {
@@ -51,4 +59,36 @@ line-height: 1.4;
 #image3 {
     grid-column-start: 3;
     grid-row-start: 3;
+}
+
+.container-down {
+    display: flex;
+}
+
+.container-down__left {
+    width: 70%;
+    border: solid 2px rgb(17, 146, 133);
+    margin: 1%;
+    padding: 1%;
+    line-height: 2em;
+}
+
+.container-down__right {
+    border: solid 2px rgb(17, 146, 133);
+    width: 24%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    line-height: 3em;
+
+}
+
+.container-down__right>ul {
+    text-align: left;
+}
+
+h2:hover {
+    color: darkred;
+    font-size: 3rem;
+    transition: 100ms 400ms;
 }
