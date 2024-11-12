@@ -17,25 +17,43 @@
 </head>
 
 <body>
-    <h1> Bienvenue chez moi</h1>
+    <h1> Bienvenue sur ma page</h1>
     <div class="container-up">
-        <div class="container-up__left">
-            <img id="photo-profil"
+        <div class="container-up-left">
+            <img class="img-profil"
                 src="https://www.shutterstock.com/image-vector/head-bearded-man-profile-portrait-250nw-2090332636.jpg"
                 alt="photo d'un portrait-homme-barbu-vert-yeux-brun-cheveux">
             <h2>Petite présentation</h2>
-            <p>Jeune développeur de 38 ans en devenir gràce à la formation O'Clock.</p>
+            <p>Jeune développeur de <span id="age"></span> ans</p> 
 
             <ul>
-                <li><span class="list-presentation">Age:</span> 38 ans (né en février 1985)</li>
-                <li><span class="list-presentation">Situation:</span> Marié</li>
-                <li><span class="list-presentation">Enfant:</span> 1 adorable petite fille</li>
-                <li><span class="list-presentation">Contact:</span> frewmike17@gmail.com</li>
-                <li><span class="list-presentation">Adresse:</span> Le Nord de la france</li>
+                <li>Date de naissance: 17 février 1985</li>
+                <li>Situation: Célibataire</li>
+                <li>Enfant: Une adorable petite fille</li>
+                <li>Contact: carluccimickael@gmail.com</li>
+                <li>Curriculum vitae: <a class="link-cv" href="https://www.dropbox.com/scl/fi/fe8mdptytafghq27vc0i3/Mon_CV.pdf?rlkey=snjpawszxi02ed57lrsbklqw3&st=ez2xpazq&dl=0" >Accèder au CV</a></li>
             </ul>
 
+            <h2 class="technology-title">Technologies</h2>
+            <div class="technology">
+            <ul class="list">
+                <li>Github</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <ul>
+                <li>Node JS</li>
+                <li>REACT</li>
+                <li>NextJS</li>
+                <li>GraphQL</li>
+                <li>REACT Native</li>
+            </ul>
         </div>
-        <div class="container-up__right">
+
+        </div>
+        <div class="container-up-right">
             <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoB81rzMxCdhp4V1FnjbUyGry9hYV6D9uakQ&usqp=CAU"
                 alt="photo de coworker">
             <img id="image2" src="data:image/jpeg;base64,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"
@@ -46,34 +64,62 @@
         </div>
     </div>
     <div class="container-down">
-        <div class="container-down__left">
-            <h2>Motivation à devenir développeur</h2>
+        <div class="container-down-left">
+            <h2>Motivation à devenir développeur dans votre entreprise</h2>
             <p>
-                Fort d'une expérience de plus de 20 ans dans le monde de l'entreprise, dont 15 années au sein de la même organisation, je suis aujourd'hui déterminé à entreprendre une transition de carrière vers le domaine du développement web et mobile. <br>
+                Fort d'une expérience de plus de 20 ans dans le monde de l'entreprise, dont 16 ans au sein de la même organisation, j'ai aujourd'hui l'ambition de réorienter ma carrière vers le développement web et mobile. <br><br>
 
-Ma décision de changer de carrière découle d'une passion longtemps entretenue pour la technologie et le développement informatique. Au cours de ma carrière précédente, j'ai souvent eu l'occasion de travailler en étroite collaboration avec des équipes de développement, et cette expérience m'a convaincu de la valeur du travail d'équipe dans la création de solutions innovantes et fonctionnelles. <br>
+Cette décision de reconversion professionnelle résulte d'une passion profonde et durable pour la technologie et le développement informatique. Tout au long de mon parcours, j’ai eu l’occasion de travailler étroitement avec des équipes de développement, ce qui m’a permis de découvrir l’importance de la collaboration dans la création de solutions innovantes et performantes.<br> <br>
 
-Je suis actuellement inscrit à l'école O'Clock, où je suis en train d'acquérir les compétences essentielles pour devenir un développeur JavaScript full stack. Cette formation m'a permis de plonger profondément dans les technologies web modernes et de maîtriser les compétences nécessaires pour développer des applications web et mobiles de haute qualité. <br>
+J’ai suivi une formation intensive à l'école O'Clock de septembre 2023 à février 2024, où j’ai acquis les compétences indispensables pour devenir développeur JavaScript full stack. Ce programme m’a permis d’explorer les technologies web modernes et de maîtriser les compétences nécessaires pour concevoir des applications web et mobiles de qualité professionnelle.<br><br>
 
-Ce qui me passionne le plus dans le développement, c'est la résolution de problèmes complexes et la possibilité de voir des projets prendre forme et aboutir. C'est une source constante de satisfaction pour moi de créer des solutions logicielles qui répondent aux besoins des utilisateurs et qui apportent une réelle valeur ajoutée aux projets. <br>
+Ce qui me motive particulièrement dans le développement, c'est le défi de résoudre des problèmes complexes et la satisfaction de voir des projets aboutir. Créer des solutions logicielles répondant aux besoins des utilisateurs, tout en apportant une réelle valeur ajoutée aux projets, est pour moi une source de motivation constante.<br><br>
 
-Je suis convaincu que mon expérience professionnelle antérieure, ma persévérance dans l'apprentissage de nouvelles compétences et ma passion pour le développement font de moi un candidat idéal pour rejoindre une équipe de développeurs JavaScript full stack. J'aspire à contribuer activement à des projets enrichissants et à collaborer efficacement avec mes collègues pour créer des produits exceptionnels.
-            </p>
+Je suis convaincu que mon expérience professionnelle, ma persévérance dans l'acquisition de nouvelles compétences et ma passion pour le développement font de moi un candidat idéal pour intégrer une équipe de développeurs. Je souhaite contribuer activement à des projets stimulants et collaborer efficacement avec mes collègues pour concevoir des produits de grande qualité. </p>
         </div>
-        <div class="container-down__right">
+        <div class="container-down-right">
             <h2>Liste de mes compétences</h2>
             <ul>
                 <li>Perséverant</li>
-                <li>Multiples expériences durant ma carriere (formateur, prise d'appel pour trouver des solutions sur les produits clients, création de book de process etc..)</li>
+                <li>Polyvalent</li>
                 <li>Créatif</li>
                 <li>Rigoureux</li>
                 <li>Bonne communication avec mon entourage</li>
-                <li>Compréhension de l'anglais correct</li>
+                <li>Bonne compréhension de l'anglais</li>
                 <li>Autonome</li>
                             </ul>
         </div>
     </div>
+    <script>
+        function ageCalculated(birthday) {
+    const now = new Date();
+    const actualYear = now.getFullYear();
+    const actualMonth = now.getMonth();
+    const actualDay = now.getDate();
 
+    const birthYear = birthday.getFullYear();
+    const birthMonth = birthday.getMonth();
+    const birthDay = birthday.getDate();
+
+    let age = actualYear - birthYear;
+
+    if (
+        actualMonth < birthMonth || 
+        (actualMonth === birthMonth && actualDay < birthDay)
+    ) {
+        age--;
+    }
+    return age;
+}
+
+
+
+        const myBirthday = new Date("1985-02-17");
+        const age = ageCalculated(myBirthday);
+
+        // Affiche l'âge dans l'élément HTML
+        document.getElementById("age").textContent = age;
+    </script>
 </body>
 
 </html>
