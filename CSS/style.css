@@ -77,21 +77,48 @@ h2 {
     color: rgb(17, 146, 133);
 }
 
-.container-up-right img {
+.container-up-right .img {
+    margin: auto;
+}
+
+.container-up-right .img p {
+    color: #eee9dd;
+    text-decoration: none;
+}
+
+.img a {
+    text-decoration: none;
+}
+
+.container-up-right .img img {
     width: 100%;
-    height: 100%;
     padding: 0.5%;
     object-fit: cover;
 }
 
 #image2 {
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
 }
 
 #image3 {
     grid-column-start: 3;
-    grid-row-start: 3;
+    grid-row-start: 1;
+}
+
+#image4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#image5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#image6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
 
 .container-down {
